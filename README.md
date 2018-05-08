@@ -48,6 +48,8 @@ npm run build
         </template>
  </Tabs>
 ```
+效果如下：
 
+![图片](./a.jpeg)
 
 
