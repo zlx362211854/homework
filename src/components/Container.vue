@@ -22,6 +22,10 @@
         </template>
       </Tabs>
     </div>
+    <h3>By：赵林肖 2018年5月8日</h3>
+    <h3>zlx2018@aliyun.com</h3>
+    <h3>13678152017</h3>
+    <h3><a href="https://github.com/zlx362211854/homework/" target="_blank">view on github</a></h3>
   </div>
 </template>
 <script>
