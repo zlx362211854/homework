@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+#### 查看在线效果：[here](http://140.143.90.177:8060/)
+
 ## Build Setup
 
 ``` bash
@@ -14,17 +16,38 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+```
+这个作业我使用vue构建，包含了四个组件,其中1，2，3为公共组件：
 
-# run unit tests
-npm run unit
+1. Tabs // 用于页签切换的容器
+2. Tab // 单个页签
+3. Dialog // 对话框
+4. Tag // （业务组件）单条信息的组件
 
-# run e2e tests
-npm run e2e
+使用场景：
 
-# run all tests
-npm test
+```
+ <Tabs :title="title"
+            :activeIndex="activeIndex"
+            :tabClickCallBack="changeTab"
+            :labelClickCallBack="handleClickLabel"
+            :info="info">
+        <template slot="tab-body">
+          <Tab :active="activeIndex === 0">
+            <Dashboard></Dashboard>
+          </Tab>
+          <Tab :active="activeIndex === 1">
+            <Cruise></Cruise>
+          </Tab>
+          <Tab :active="activeIndex === 2">
+            <Agents></Agents>
+          </Tab>
+          <Tab :active="activeIndex === 3">
+            <Help></Help>
+          </Tab>
+        </template>
+ </Tabs>
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
